@@ -1,0 +1,55 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.Detail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:wt="ui5.walkthrough.control"
+>
+	<Page id="_IDGenPage1"
+		title="{i18n>detailPageTitle}"
+		showNavButton="true"
+		navButtonPress=".onNavBack"
+	>
+		<ObjectHeader id="_IDGenObjectHeader1"
+			responsive="true"
+			fullScreenOptimized="true"
+			number="{
+				parts: [
+					'invoice>ExtendedPrice',
+					'view>/currency'
+				],
+				type: 'sap.ui.model.type.Currency',
+				formatOptions: {
+					showMeasure: false
+				}
+			}"
+			numberUnit="{view>/currency}"
+			intro="{invoice>ShipperName}"
+			title="{invoice>ProductName}"
+		>
+			<attributes>
+				<ObjectAttribute id="_IDGenObjectAttribute1"
+					title="{i18n>quantityTitle}"
+					text="{invoice>Quantity}"
+				/>
+				<ObjectAttribute id="_IDGenObjectAttribute2"
+					title="{i18n>dateTitle}"
+					text="{
+						path: 'invoice>ShippedDate',
+						type: 'sap.ui.model.type.Date',
+						formatOptions: {
+							style: 'long',
+							source: {
+							pattern: 'yyyy-MM-ddTHH:mm:ss'
+							}
+						}
+					}"
+				/>
+			</attributes>
+		</ObjectHeader>
+		<wt:ProductRating
+			id="rating"
+			class="sapUiSmallMarginBeginEnd"
+			change=".onRatingChange"
+		/>
+	</Page>
+</mvc:View>

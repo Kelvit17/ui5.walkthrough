@@ -1,0 +1,38 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.HelloPanel"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+>
+	<Panel id="_IDGenPanel1"
+		headerText="{i18n>helloPanelTitle}"
+		class="sapUiResponsiveMargin"
+		width="auto"
+		expandable="{device>/system/phone}"
+		expanded="{= !${device>/system/phone} }"
+		accessibleRole="Region"
+	>
+		<content>
+			<Button
+				id="helloDialogButton"
+				icon="sap-icon://world"
+				text="{i18n>openDialogButtonText}"
+				press=".onOpenDialog"
+				class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"
+			/>
+			<Button id="_IDGenButton1"
+				text="{i18n>showHelloButtonText}"
+				press=".onShowHello"
+				class="myCustomButton"
+			/>
+			<Input id="_IDGenInput1"
+				value="{/recipient/name}"
+				valueLiveUpdate="true"
+				width="60%"
+			/>
+			<FormattedText id="_IDGenFormattedText1"
+				htmlText="Hello {/recipient/name}"
+				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+			/>
+		</content>
+	</Panel>
+</mvc:View>
