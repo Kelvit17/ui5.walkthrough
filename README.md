@@ -19,7 +19,7 @@
 
 ## ui5.walkthrough
 
-An SAP Fiori application.
+An SAP Fiori application.12
 
 ### Starting the generated app
 
