@@ -21,7 +21,7 @@
                 <Table id="inventoryTable" inset="false" items="{/inventory}">
                     <headerToolbar>
                         <Toolbar id="_IDGenToolbar2">
-                            <Title id="_IDGenTitle2" text="Inventory List TEST DEPLOY 237669784234   "/>
+                            <Title id="_IDGenTitle2" text="Inventory List TEST"/>
                         </Toolbar>
                     </headerToolbar>
                     <columns>
