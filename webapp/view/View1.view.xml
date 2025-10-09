@@ -3,7 +3,7 @@
           xmlns:core="sap.ui.core" 
           controllerName="ui5.walkthrough.controller.View1"
           displayBlock="true">
-    <Page id="page" title="Inventory Management">
+    <Page id="page" title="Inventory Management 2 Test">
         <content>
             <VBox id="_IDGenVBox1" fitContainer="true">
                 <!-- Toolbar -->
