@@ -29,7 +29,7 @@
                             <Text id="_IDGenText1" text="Item ID"/>
                         </Column>
                         <Column id="_IDGenColumn2">
-                            <Text id="_IDGenText2" text="Name"/>
+                            <Text id="_IDGenText2" text="First Name"/>
                         </Column>
                         <Column id="_IDGenColumn3">
                             <Text id="_IDGenText3" text="Category"/>
